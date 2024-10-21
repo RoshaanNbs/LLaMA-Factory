@@ -1,0 +1,14 @@
+### Note: DO NOT use quantized model or quantization_bit when merging lora adapters
+
+### model
+model_name_or_path: s3://sagemaker-us-east-1-054037122933/llama3-factory-EXP-2024-10-21-14-14-07/output/pytorch-training-2024-10-21-14-14-12-183/output/
+# adapter_name_or_path: saves/llama3-8b/lora/sft
+adapter_name_or_path: s3://sagemaker-us-east-1-054037122933/llama3-factory-EXP-2024-10-21-14-14-07/output/pytorch-training-2024-10-21-14-14-12-183/output/checkpoint-38/adapter_model.safetensors
+template: llama3
+finetuning_type: lora
+
+### export
+export_dir: models/llama3_lora_sft
+export_size: 2
+export_device: cpu
+export_legacy_format: false
