@@ -20,7 +20,7 @@ output_dir: s3://baykar-ros-bucket/raw/checkpoints
 logging_steps: 10
 save_steps: 500
 plot_loss: true
-overwrite_output_dir: false
+overwrite_output_dir: true
 
 # checkpoint_dir: /opt/ml/checkpoints
 # save_total_limit: 3
