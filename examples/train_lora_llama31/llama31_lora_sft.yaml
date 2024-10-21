@@ -18,7 +18,7 @@ preprocessing_num_workers: 16
 ### output
 output_dir: saves/llama31-8b/lora/sft
 logging_steps: 10
-save_steps: 500
+save_steps: 10
 plot_loss: true
 overwrite_output_dir: true
 
